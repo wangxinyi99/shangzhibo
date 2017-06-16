@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="viewport" content=" initial-scale=1,maximum-scale=1.0, user-scalable=no,">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://nos.netease.com/vod163/nep.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://nos.netease.com/vod163/nep.min.js"></script>
+		<!--<link rel="stylesheet" type="text/css" href="../css/mui.css"/>-->
+		<title>尚直播</title>
+		<style type="text/css">
+			html,body{
+				font-family: "微软雅黑","Consolas";
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div class="hed">
+				<div class="myvideo">
+					<video  id="my-video" class="video-js"  autoplay="autoplay" controls poster="img/first.png" webkit-playsinline height="240px" data-setup='{}'>
+   		 		  		<source src="http://pullhls229bdcd1.live.126.net/live/c82c42e37da84b8d8d2e8a2c3e894a8f/playlist.m3u8" type="application/x-mpegURL" id="source-src">
+   		 			<!--<source src="http://v229bdcd1.live.126.net/live/b5b0c93aa79b4233b50e681c78c59df1.flv" type="video/x-flv" id="source-src">-->
+					</video>
+				</div>
+				<div class="title">
+					
+						<div class="lef_face">
+							<div class="face">
+								<a href=""><img src="img/f601fd6c25719a44293dacdeb35d83fe.jpeg"  /></a>
+							</div>
+						</div>
+						<div class="rig_txt">
+							<h5><a href="">尚客传播官方测试</a></h5>
+							
+							<!--<p style="font-size: 12px;margin-top: 2px;">尚直播互联网第一媒体</p>-->
+						</div>
+				</div>
+				<ul id="nav_li">
+					<li class="public_two" id="pul-sec"> <a href="#SZ_media" data-toggle="tab">评论</a></li>
+					<li class="" id="pul-fir"><a href="#SZ_jian" data-toggle="tab">简介</a></li>
+				</ul>
+
+			</div>
+			<div class="bot_tex">
+				<div id="SZ_jian" style="display: none;">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					是在互联网时代，新媒体产业发展需求的背景下，诞生的一档关注互联网金融的新媒体访谈栏目。
+					秉承“互联网+”的节目理念，聚焦重度垂直细分行业，
+					主持人牛园邀请互联网金融领域的精英翘楚，分享牛人牛事。打造“互联网金融第一视频”。
+				</div>
+				<ul class="media-list" style="" id="SZ_media">
+				   	
+					<li class="media">
+				      <a class="pull-left" href="#">
+				         <img class="media-object" src="img/f601fd6c25719a44293dacdeb35d83fe.jpeg" 
+				         alt="通用的占位符图像" style="">
+				      </a>
+				      <div class="media-body">
+				         <span class="media-heading">尚客传播官方测试</span>
+				         <span class="timess" style="float: right;margin-right: 10px;">
+				         	12:00
+				         </span>
+				         <div class="timess" style="">
+				     			2016--8-16 12:00
+				     		</div>
+				         <p class="p-col">秉承“互联网+”的节目理念，聚焦重度垂直细分行业，聚焦重度垂直细分行业，聚焦重度垂直细分行业，聚焦重度垂直细分行业，
+				         </p>
+				        </div>
+					</li>
+					
+				</ul>
+				</div>
+				<!--发表评论-->
+				<div class="pop_div">
+						<span class="" style="float: left;padding: 10px;">
+							<a href="">取消</a>
+						</span>
+						<span class="" style="float: right;padding: 10px;">
+							<a href="">发布</a>
+						</span>
+					<!--	<textarea name="tear" autofocus ></textarea>-->
+					<form method="" action="">
+							<div>
+							<textarea name="tear" autofocus="">
+							</textarea>
+							</div>
+						</form>
+						<p style="text-align: center;padding: 10px;color: #10b3df;">您的评论激励主播更努力</p>
+				</div>
+				<!--打赏-->
+				<!--<div class="pop_money">
+							<div class="" style="width: 100%;padding: 5px 0px 5px 0px;margin: 1px;">
+								<span class="" style="padding: 10px;">
+									<a href="">取消</a>
+								</span>
+								<span class="" style="float: right;">
+									<a href="">发布</a>
+								</span>
+							</div>
+							<div class="" style="text-align: center;">
+								
+							
+							<div class="sub-btn" style="padding: 5px ;margin: 5px auto; width: 100%;">
+								<button class="btn-mon " style="">1元</button>
+								<button class="btn-mon public_btn">5元</button>
+								<button class="btn-mon ">10元</button>
+							</div>
+							
+								<form class="form-inline">
+								  <div class="form-group">
+								    <label for="exampleInputName2">Name</label>
+								    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+								  </div>
+								  
+								</form>
+							<p style="text-align: center;padding: 10px;color: #10b3df;">您的打赏激励主播更努力</p>
+					</div>
+					</div>-->
+					<!--========================支付金额======================-->
+			<section id="money">
+			   <!-- <section id="moneyMengb">
+			
+			    </section>-->
+			    <section id="moneyContent">
+			        <div>
+			            <span class="cancel">取消</span>
+			            <span class="confirm">确认</span>
+			        </div>
+			        <div id="payMoney">
+			            <div class="payMoney pu_money">1元</div>
+			            <div class="payMoney">5元</div>
+			            <div class="payMoney">10元</div>
+			            <br/>
+			
+			        </div>
+			        <div id="moneySelf">
+			            <span>任性赏</span>
+			            <input type="text" class="money"/>
+			            <span>元</span>
+			        </div>
+			        <div id="kouhao">
+			            <div id="line"></div>
+			            <span>您的打赏激励小编更努力</span>
+			        </div>
+			    </section>
+			</section>
+
+				<footer style="">
+					<ul class="nav_fot">
+						<li  class="li_pop"><a href="javascript:;"><img src="img/ping.png"/></a></li>
+						<li class="li_mon"> <a href="javascript:;"><img src="img/moenydd.png"/></a></li>
+					</ul>
+				</footer>
+		</div>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+			var myPlayer;
+			myPlayer = neplayer("my-video", {
+					"controls": false, //是否显示控制条
+					"autoplay": true, //是否自动播放(ios不支持自动播放)
+
+					/*预加载选项*/
+					"preload": "metadata",
+					/*
+					'auto'预加载视频（需要浏览器允许）;
+					'metadata'仅预加载视频meta信息;
+					'none'不预加载;
+					*/
+
+					"poster": "img/first.png", //视频播放前显示的图片
+					"loop": true, //是否循环播放
+				
+					/*设置播放器控件*/
+					controlBar: {
+						muteToggle: false
+					}
+					/* myPlayer.setDataSource("http://www.example.com/path/to/video.mp4");
+		   myPlayer.setDataSource({
+			  type: "video/mp4",
+			  src: "http://www.example.com/path/to/video.mp4"
+			});*/
+
+				},
+				function() {
+					// 当播放器初始化完成时运行的回调函数
+					//获取当前播放位置（单位毫秒）
+					var currentPos = myPlayer.getCurrentPosition();
+					//获取视频总时长（单位毫秒）
+					var duration = myPlayer.getDuration();
+					//获取sdk版本号
+					var version = myPlayer.getVersion();
+					//获取视频高度
+					var height = myPlayer.getVideoHeight();
+					//获取视频宽度
+					var width = myPlayer.getVideoWidth();
+				var volume = myPlayer.getVolume();
+//				myPlayer.setVolume(0.5);
+				console.log(volume+"=================================================");
+					console.log('获取当前播放位置' + currentPos + '==========' + duration + '=========' + version);
+
+				});
+			//播放器在调用错误回调函数时，会向回调函数传递一个错误对象参数
+			myPlayer.onError(function(err) {
+				console.log(err.errCode);
+				console.log(err.errMsg);
+			});
+
+			$('#btn-open').on('click', function() {
+
+				/*$(this).val($(this).val()=="开始播放"?"关闭":"开始播放");*/
+				console.log('btn-open is value' + $('#txt').val());
+				myPlayer.play();
+				$("#source-src").attr('src', $("#txt").val());
+
+				// //开始播放	
+				// //设置播放器的高宽度
+				// myPlayer.resize( 640, 480);
+
+				// 	console.log(myPlayer.play()+"开始播");
+			});
+		
+			$('#btn-close').on('click', function() {
+				myPlayer.pause();
+				console.log("关闭播");
+			});
+			$('#btn-res').on('click', function() {
+				myPlayer.reset();
+				console.log("重播");
+			});
+			$('#btn-des').on('click', function() {
+				myPlayer.setMute(true);
+				console.log("静音");
+			});
+			/*简介 评论*/
+//			$('.nav_li>li').on('click',function(){
+//				
+//				/* $(this).addClass('public_two').siblings().children().removeClass('public_two');*/
+//				  $(".nav_li>li").removeClass("public_two");
+//    			$(this).addClass("public_two",function(){
+//    				
+//    			});
+//			});
+				$("#nav_li>#pul-fir").on("click",function(){
+					$(this).addClass("public_two");
+					  $("#nav_li>#pul-sec").removeClass("public_two");
+					$("#SZ_jian").show();
+					$("#SZ_media").hide();
+				});
+				$("#nav_li>#pul-sec").on("click",function(){
+					$(this).addClass("public_two");
+					$("#nav_li>#pul-fir").removeClass("public_two");
+					$("#SZ_media").show();
+					$("#SZ_jian").hide();
+				});
+				//弹出框
+				$(".li_mon").on("click",function(){
+					$("#money").slideToggle(300);
+				});
+				$(".li_pop").on("click",function(){
+					$(".pop_div").slideToggle(300);
+				});
+				/*打赏界面的moneybutton*/
+				/*$("#payMoney>.payMoney").on("click",function(){
+					$(this).addClass('pu_money').siblings().children().removeClass('pu_money');
+					console.log("fjdfjdfd");
+				});*/
+				$(".cancel").click(function(){
+		    $("#pay").css("display","none");
+		    $("#money").css("display","none");
+		    $("footer").css("display","block");
+		});
+		$(".payMoney").click(function(){
+		    $(this).css("border","0");
+		    $(this).css("background-color","#10B3DF");
+		    $(this).css("color","white")
+		    $(this).siblings().css("color","#CBCBCB");
+		    $(this).siblings().css("border","1px solid #CBCBCB");
+		    $(this).siblings().css("background-color","white");
+		
+		});
+			$(".money").focus(function(){
+			    $(".payMoney").css({"color":"#CBCBCB"});
+			    $(".payMoney").css("border","1px solid #CBCBCB");
+			    $(".payMoney").css("background-color","white");
+			})
+			$(".confirm").click(function(){
+			    $("#money").css("display","none");
+			    $("footer").css("display","block");
+			});
+		});
+	</script>
+</body>
+</html>

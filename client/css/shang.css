@@ -1,0 +1,113 @@
+html,body{
+    font-family: "微软雅黑","Consolas";
+    font-size: 14px;
+    background-color: #f5f5f5;
+}
+#shang{
+
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.shangContent{
+    border: 1px solid #CBCBCB;
+    width: 100%;
+    padding: 10px;
+    margin: 50px 0px;
+    position: relative;
+}
+.ro_cent .col_list {
+    width: 30%;
+    margin: 1%;
+    /* float: left; */
+    display: inline-block;
+    position: relative;
+}
+.shangContent .ro_cent{
+    margin-top: 20px;
+
+}
+.ro_cent .thumbnail {
+    border: 0;
+    margin: 0px;
+    padding: 0;
+}
+.ro_cent .info_cat {
+    background: #09c6bc;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin: 8px 0 0 8px;
+    font-size: 12px;
+    display: block;
+    border-radius: 0px 0px 5px 0px;
+}
+h4{
+    font-size: 15px;
+}
+
+ul,li{
+    list-style: none;
+
+}
+#tit{
+    padding: 10px;
+    margin: 5px;
+    position: absolute;
+    top: -30px;
+    left: 5px;
+}
+#tit li{
+    float: left;
+    padding: 5px 15px;
+    margin-left: 30px;
+    background-color: #f5f5f5;
+    color: #3C3C3C;
+    color: red;
+}
+#tit li:first-child{
+    margin-left: 10px;
+}
+.pub_li a{
+    color:#007aff !important;
+
+}
+#tit li a{
+    color: #3C3C3C;
+    display: block;
+}
+.pub_li{
+    color: #007aff;
+    border-bottom: 2px solid #007aff;
+}
+a:active{
+    text-decoration: none;
+
+} a:link{
+      text-decoration: none;
+  }
+.more_vi{
+    width: 100%;padding: 10px;text-align: center;border: 1px solid #CBCBCB;
+    margin-top: -50px;
+}
+.more_vi a{
+    color: #CBCBCB;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+
+}
+.swiper-slide img{
+    width: 450px;height: 300px;
+}

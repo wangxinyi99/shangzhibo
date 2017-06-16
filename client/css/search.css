@@ -1,0 +1,112 @@
+/*==============推荐部分===========*/
+#recommendNav ul{
+    list-style: none;
+    width: 100%;
+    background-color: #F8F8F8;
+    padding: 0% 2% 5% 2%;
+}
+#recommendNav ul li{
+    float: left;
+    padding: 1% 0;
+    width: 10%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 2%;
+    /*color: red;*/
+}
+#recommendNav ul li:first-child{
+    border-bottom: 2px solid #24B4DD;
+}
+#recommendContant{
+    margin-top: 1%;
+}
+/*==========所搜匡部分======*/
+#search{
+    width: 100%;
+    margin-top: 10%;
+    position: relative;
+}
+#search div{
+    font-family: index;
+    position: absolute;
+    left: 32%;
+    font-size: 2em;
+    color: gainsboro;
+}
+#search input{
+    width: 40%;
+    margin-left: 30%;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    font-size: 1em;
+    /*box-shadow: 5px;*/
+    outline: none;
+    padding: 0.5% 0;
+    text-align: center;
+    /*mso-border-shadow:  ;*/
+}
+/*============推荐的直播部分===========*/
+#recommendTitle{
+    margin-top:3%;
+    margin-left: 13.5%;
+    margin-bottom: 0%;
+}
+#recommendContant{
+    width: 100%;
+}
+#recommendContant ul{
+    width: 100%;
+    list-style: none;
+    padding: 1% 2% 1% 3%;
+}
+#recommendContant ul li{
+    /*float: left;*/
+    width: 47%;
+    margin: 1% 1.2%;
+    display: inline-block;
+    /*clear: both;*/
+}
+.recommend{
+    width: 100%;
+    position: relative;
+}
+.recommend img{
+    width: 100%;
+    display: block;
+}
+.recommendTable{
+    padding: 1% 2%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+.recommendTitle{
+    padding: 3% 0;
+    background-color: #F8F8F8;
+    border: 1px solid gainsboro;
+    border-top: 0;
+}
+#recommend{
+    border: 1px solid gainsboro;
+    width: 100%;
+    /*padding-bottom: 120% ;*/
+    position: relative;
+}
+#recommendNav{
+    width: 100%;
+}
+#informationFooter{
+    margin-top: 40%;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    width: 96%;
+}
+#pageContant{
+    margin: 0;
+}
+#contantLeft{
+    padding-top:1% ;
+}

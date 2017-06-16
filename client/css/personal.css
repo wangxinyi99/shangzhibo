@@ -1,0 +1,251 @@
+html{
+    background-color: #ECECEC;
+}
+@font-face {
+    font-family: personal;
+    src: url("../font/personal/iconfont.ttf");
+}
+#pageContant{
+    margin-top: 7%;
+    padding: 2% 0;
+    background-color: #ECECEC;
+}
+#personalMessage{
+    width: 100%;
+    position: relative;
+    padding: 2% 0;
+}
+#personalName{
+    margin-top: 3%;
+    margin-right: 1%;
+    margin-left: 8%;
+    font-size: 1.2em;
+}
+#change{
+    font-size: 1.2em;
+    font-family: personal;
+    color: #B7B7B7;
+}
+#personalMessage div{
+    display: inline-block;
+}
+#personalImg{
+    position: absolute;
+    /*text-outline: ;*/
+    width: 7%;
+    border-radius: 100%;
+}
+#personalImg img{
+    width: 100%;
+    border-radius: 100%;
+}
+/*===============个人内容部分===========*/
+#personalContant{
+    width: 100%;
+    margin-top: 3%;
+}
+/*=============左边导航部分=============*/
+#personalNav{
+    position: fixed;
+    /*position: relative;*/
+    width: 10%;
+    min-width: 100px;
+    /*left: 10%;*/
+    /*display: inline-block;*/
+}
+#personalNav ul li:first-child .redCircle{
+    display: block;
+}
+.redCircle{
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    background-color: red ;
+    border-radius: 100%;
+    /*width: 2%;*/
+    padding:5%;
+    /*padding: 4% 2.8% 4% 2.8%;*/
+}
+#personalNav ul li{
+    padding: 10% 10% 0 10%;
+    background-color: white;
+    cursor: pointer;
+    /*position: relative;*/
+}
+.personalItem{
+    font-size: 1.2em;
+    padding: 5% 3% 15% 3%;
+    text-align: center;
+    border-bottom: 1px dashed gainsboro;
+}
+#personalNav ul li:last-child{
+    padding: 5% 10% 0 10%;
+}
+#personalNav ul li:last-child div{
+    border: none;
+    padding: 0% 3% 10% 3%;
+}
+/*===========右边内容===========*/
+.personalNavContant{
+    /*display: none;*/
+    width: 80%;
+    margin-left: 20%;
+    /*display: inline-block;*/
+}
+.messageNav{
+    width: 100%;
+    padding: 1% 0;
+}
+.messageNav ul{
+    list-style: none;
+    width: 100%;
+    border-bottom: 2px solid gainsboro;
+}
+.messageNav ul li{
+    display: inline-block;
+    padding: 1% 2%;
+    padding-top: 3%;
+    cursor: pointer;
+}
+.messageNav ul li:first-child{
+    border-bottom: 2px solid #24B4DD;
+
+}
+#messageContant{
+    /*display: none;*/
+    margin-top: 2%;
+    width: 96%;
+    background-color: white;
+    padding:1% 2% 0 2%;
+    /*margin-left: 20%;*/
+}
+#messageContant ul{
+    margin: 0;
+}
+#messageContant ul li{
+    margin-top: 1%;
+    position: relative;
+    cursor: pointer;
+    padding: 0.2% 0;
+}
+.messagePoint{
+    background-color: red;
+    padding: 0.7%;
+    position: absolute;
+    left: 4.2%;
+    top: 0.4%;
+    border-radius: 100%;
+}
+.messageIcon{
+    font-family: personal;
+}
+.messageTitle{
+    width: 100%;
+    /*border: 1px solid red;*/
+}
+.messageTitle div{
+    display: inline-block;
+}
+.messageDelete{
+    font-family: personal;
+    /*display: inline-block;*/
+    font-size: 1.1em;
+    color: red;
+    float: right;
+    clear: both;
+    /*margin-left: 60%;*/
+}
+.messageIcon{
+    font-size: 2em;
+    background-color: #8BC899;
+    color: white;
+    padding: 1% 1.8%;
+    border-radius: 100%;
+}
+.messageClass{
+    margin: 2%;
+    font-size: 1.2em;
+}
+.messageContant{
+    width: 92%;
+    margin-left: 8%;
+    line-height: 1.5em;
+    color: #B7B7B7;
+    padding-bottom: 2%;
+    border-bottom: 1px dashed gainsboro;
+}
+#messageContant ul li:last-child .messageContant{
+    border: none;
+}
+footer{
+    /*margin-top: 10%;*/
+}
+/*===================打赏记录============*/
+#dashang {
+    display: none;
+    width: 100%;
+    margin-top: 2%;
+    /*margin-left: 20%;*/
+    background-color: #FFFFFF;
+    border: 1px solid #CBCBCB;
+}
+
+ul,li {
+    text-decoration: none;
+}
+
+.cents{
+    padding: 10px;
+    position: relative;
+}
+
+.cents .one{
+
+    border-bottom: 1px dashed #CBCBCB;
+}
+.one .timess{
+    border-right: 1px solid #CBCBCB;
+    vertical-align: middle;
+    padding: 10px 5px;
+    text-align: center;
+    width: 20%;
+    /*float: left;*/
+    display: inline-block;
+    position: absolute;
+    top: 26%;
+    left: 0;
+}
+
+.ul_list{
+    background-color: #fff;
+
+    width: 75%;
+    display: inline-block;
+    margin-left: 25%;
+}
+.ul_list .list-grou {
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.list-grou img{
+    width:5%;
+    margin: 0px 5px;
+}
+.list-grou .span_money{
+    float: right;
+    color: #fa542a;
+    margin-right: 10px;
+}
+.a{
+    display: inline-block;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 90%;
+}
+.list-grou:first-child{
+    border-left: 0px;
+}
+.list-grou:last-child{
+    border-left: 0px;
+}

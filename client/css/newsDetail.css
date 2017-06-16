@@ -1,0 +1,43 @@
+#detailGuide{
+    margin-left: 2em;
+}
+#detailGuide div{
+    display: inline-block;
+    cursor: pointer;
+
+}
+#detailGuide div:last-child{
+    font-weight: bolder;
+}
+.detailRight{
+    color: #10B3DF;
+}
+#detailAllTitle{
+    margin-left: 2em;
+}
+#detailTime{
+    /*margin-left: 2.1em;*/
+    color: #7A7A7A;
+    font-size: 0.813em;
+    margin-bottom: 1%;
+}
+/*#detailAllTitle span{*/
+    /*margin-left: 2em;*/
+
+/*}*/
+#detailOriginalTitle p{
+    text-indent: 2em;
+    color: black;
+    font-size: 1em;
+    line-height: 2.8em;
+    margin: 0;
+
+}
+#articleBanner{
+    width: 100%;
+    text-indent: 0;
+    margin: 2% 0;
+}
+#articleBanner img{
+    width: 100%;
+}

@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+@font-face {
+    font-family: news;
+    src:url("../font/news/iconfont.ttf")
+}
+html{
+    width: 100%;
+    background-color: #F5F5F5;
+}
+/*===============新闻内容部分============*/
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+#newTitle{
+}
+#newTitle div:first-child{
+    padding: 1%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+
+}
+#newFrom{
+    padding: 3%;
+}
+.edit{
+    position: absolute;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #8c8c8c;
+}
+#editName{
+    right: 3%;
+}
+article{
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    color: black;
+}
+#reference{
+    font-size: 1rem;
+    color: #8c8c8c;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+/*=====================评论部分===============*/
+ul{
+    list-style: none;
+    margin-bottom: 11.5%;
+}
+ul li{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #CCCCCC;
+
+}
+#comment{
+    width: 96%;
+    margin-left: 2%;
+    background-color: white;
+    margin-top: 5%;
+    padding-top: 5%;
+}
+#commentTotle{
+    text-align: center;
+    background-color: white;
+    padding-bottom: 4%;
+
+    border-bottom: 1px solid #CCCCCC;
+}
+#commentButtle{
+    display: inline-block;
+    width: 4%;
+    margin-right: 2%;
+}
+#commentButtle img{
+    width: 100%;
+}
+.user{
+    position: relative;
+    padding: 2%;
+}
+.userImg{
+    display: inline-block;
+    width: 10%;
+    overflow: hidden;
+    margin-top: 5%;
+
+}
+.userImg img{
+    width: 100%;
+    border-radius: 100%;
+}
+.userMassage{
+    display: inline-block;
+}
+.userName{
+    font-size: 1rem;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+.userDate{
+    font-size: 1rem;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+.userTime{
+    font-size: 1rem;
+    position: absolute;
+    top: 35%;
+    right: 3%;
+}
+.userComment{
+    margin-left: 15%;
+}
+/*==============页脚部分===================*/
+/*=================打赏=========*/
+#pay{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+#payMengb{
+    background-color: black;
+    padding-top: 150%;
+    width: 100%;
+    opacity: 0.3;
+}
+#payContent{
+    background-color: #F5F5F5;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 1rem;
+    padding-top: 3%;
+}
+#pay div:first-child{
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+#pay div:first-child span{
+    color: #24B4DD;
+}
+.payWay{
+    position: relative;
+    padding-top:7%;
+    padding-bottom: 7%;
+}
+.payBtn01{
+    color:#10B3DF;
+}
+.payWay img{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+.payWay span:first-child{
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+.payWay span:last-child{
+    font-family: news;
+    color: grey;
+    position: absolute;
+    right:5%;
+    top: 25%;
+}
+#payBtn01{
+    color:#10B3DF;
+}
+#confirm{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    background-color: #10B3DF;
+    color: white;
+}
+/*========================打赏金额============*/
+#money{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+#moneyMengb{
+    background-color: black;
+    padding-top: 145%;
+    width: 100%;
+    opacity: 0.3;
+}
+#moneyContent{
+    background-color: #F5F5F5;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 1rem;
+    padding-top: 3%;
+}
+#payMoney div:first-child{
+    background-color: #10B3DF;
+    color: white;
+    border: 0;
+}
+#moneyContent div:first-child span{
+    color:#24B4DD;
+    font-size: 1rem;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+#moneyContent div:first-child span:last-child{
+     float: right;
+ }
+#payMoney div{
+    width:20%;
+    margin-left: 8%;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 16px;
+    margin-top: 2%;
+    background-color: white;
+    font-size: 1rem;
+}
+#moneySelf{
+    width:50%;
+    margin-left: 18%;
+    border: 0;
+    background-color: #F5F5F5;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 16px;
+    margin-top: 2%;
+}
+#moneySelf input{
+    width: 39%;
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 18px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    outline: none;
+}
+#kouhao{
+    position: relative;
+    font-size: 0.8rem;
+    line-height: 48px;
+    color: #24B4DD;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#line{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    border: 1px solid #e3e3e3;
+}
+/*=================真·页脚==================*/
+footer{
+    /*margin-top: 20%;*/
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1% 0 1% 2%;
+}
+footer span{
+    padding-left:2%;
+    padding-right: 10%;
+}
+footer div{
+    font-family: news;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    margin-left: 2%;
+}
+footer div:last-child{
+
+}
+#footerGood{
+    position: relative;
+}
+#footerGood span{
+    position: absolute;
+    margin-left: 2%;
+    bottom: -10%;
+    opacity: 0;
+}
+#footerGood02{
+    color: red;
+    position: absolute;
+    left: 42%;
+    bottom: 20%;
+    display: none;
+}

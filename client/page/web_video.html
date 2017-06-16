@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link href="http://nos.netease.com/vod163/nep.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../css/index.css"/>
+	<link rel="stylesheet" href="../css/video.css"/>
+	<!--<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>-->
+	<title>尚直播</title>
+	<style type="text/css">
+		/*html,body{*/
+			/*font-family: "微软雅黑","Consolas";*/
+			/*font-size: 14px;*/
+		/*}*/
+
+	</style>
+</head>
+<body>
+<!--=====================头部样式=====================-->
+<header>
+	<div class="contant">
+		<div id="logo"><h1><img src="../img/logo.png" alt="logo"/></h1></div>
+		<nav>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">股票</a></li>
+				<li><a href="#">互金</a></li>
+				<li><a href="#">期货</a></li>
+				<li><a href="#">投资</a></li>
+				<li><a href="#">会议</a></li>
+				<li><a href="#">基金</a></li>
+				<li><a href="#">白银</a></li>
+			</ul>
+		</nav>
+		<!-- ======跳转到尚直播界面=====-->
+		<div id="shangLive"><a href="#">尚直播</a></div>
+		<!-- =====点击跳转到搜索界面=====-->
+		<div id="searchIcon">&#xe686;</div>
+
+		<div id="mine">&#xe65d;</div>
+
+	</div>
+	<!-- ======显示登录的方式===-->
+	<div id="sociality">
+		<div id="point"></div>
+		<div id="socialityContant">
+			<div id="socialityTitle">登录方式</div>
+			<div id="socialityIcon">
+				<div>
+					&#xe606;
+				</div>
+				<div>
+					&#xe610;
+				</div>
+				<div>
+					&#xe780;
+				</div>
+			</div>
+		</div>
+
+	</div>
+</header>
+<div id="main">
+	<div class="hed">
+		<div class="myvideo">
+			<video  id="my-video" class="video-js"  autoplay="autoplay" controls poster="../img/first.png" webkit-playsinline height="240px" data-setup='{}'>
+				<source src="http://pullhls229bdcd1.live.126.net/live/c82c42e37da84b8d8d2e8a2c3e894a8f/playlist.m3u8" type="application/x-mpegURL" id="source-src">
+				<!--<source src="http://v229bdcd1.live.126.net/live/b5b0c93aa79b4233b50e681c78c59df1.flv" type="video/x-flv" id="source-src">-->
+			</video>
+		</div>
+	</div>
+	<div class="bot_tex">
+		<h5><a href="">尚客传媒与腾讯签约仪式</a></h5>
+		<div id="cent_text">
+			Death comes to all, but great achievements raise a monument which shall endure until the sun grows old.
+			Death comes to all, but great achievements raise a monument which shall endure until the sun grows old.
+			Death comes to all, but great achievements raise a monument which shall endure until the sun grows old.
+			Death comes to all, but great achievements raise a monument which shall endure until the sun grows old.
+			Death comes to all, but great achievements raise a monument which shall endure until the sun grows old.
+			Death comes to all, but great achievements raise a monument which shall endure until the sun grows old.
+			Death comes to all, but great achievements raise a monument which shall endure until the sun grows old.
+		</div>
+	</div>
+	<!--</section>-->
+</div>
+<!--=========================页脚==========================-->
+<footer>
+	<div class="contant">
+		<!-- ==========外部链接==========-->
+		<div id="webLink">
+			<ul>
+				<li><a href="">牛牛宝</a></li>
+				<li><a href="">中宏网</a></li>
+				<li><a href="">金融投资网</a></li>
+				<li><a href="">一财网</a></li>
+				<li><a href="">财新网</a></li>
+				<li><a href="">金融界</a></li>
+				<li><a href="">东方财富网</a></li>
+				<li><a href="">每经网</a></li>
+				<li><a href="">创业邦</a></li>
+				<li><a href="">黑马</a></li>
+				<li><a href="">点睛网</a></li>
+				<li><a href="">中国大数据</a></li>
+				<li><a href="">证券时报网</a></li>
+				<li><a href="">互联网金融服务中心</a></li>
+			</ul>
+		</div>
+		<!-- ==============关于我们===========-->
+		<div id="us">
+			<div id="usContant">
+				<ul>
+					<li>关于我们</li>
+					<li>加入我们</li>
+					<li>成为作者</li>
+					<li>商务合作</li>
+				</ul>
+			</div>
+		</div>
+		<!-- ===============版权信息============-->
+		<div id="copyRight">
+			Copyright © 2015 - 2016 尚直播文化传播版权所有 蜀ICP备14025465号
+		</div>
+	</div>
+</footer>
+<script src="http://nos.netease.com/vod163/nep.min.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var myPlayer;
+		myPlayer = neplayer("my-video", {
+					"controls": false, //是否显示控制条
+					"autoplay": true, //是否自动播放(ios不支持自动播放)
+
+					/*预加载选项*/
+					"preload": "metadata",
+					/*
+					 'auto'预加载视频（需要浏览器允许）;
+					 'metadata'仅预加载视频meta信息;
+					 'none'不预加载;
+					 */
+
+					"poster": "../img/first.png", //视频播放前显示的图片
+					"loop": true, //是否循环播放
+
+					/*设置播放器控件*/
+					controlBar: {
+						muteToggle: false
+					}
+					/* myPlayer.setDataSource("http://www.example.com/path/to/video.mp4");
+					 myPlayer.setDataSource({
+					 type: "video/mp4",
+					 src: "http://www.example.com/path/to/video.mp4"
+					 });*/
+
+				}
+
+				, function () {
+					// 当播放器初始化完成时运行的回调函数
+					//获取当前播放位置（单位毫秒）
+					var currentPos = myPlayer.getCurrentPosition();
+					//获取视频总时长（单位毫秒）
+					var duration = myPlayer.getDuration();
+					//获取sdk版本号
+					var version = myPlayer.getVersion();
+					//获取视频高度
+					var height = myPlayer.getVideoHeight();
+					//获取视频宽度
+					var width = myPlayer.getVideoWidth();
+					var volume = myPlayer.getVolume();
+					myPlayer.setVolume(0.5);
+
+					//播放器在调用错误回调函数时，会向回调函数传递一个错误对象参数
+					myPlayer.onError(function (err) {
+						console.log(err.errCode);
+						console.log(err.errMsg);
+					});
+
+				});
+					$('#btn-close').on('click', function () {
+						myPlayer.pause();
+						console.log("关闭播");
+					});
+					$('#btn-res').on('click', function () {
+						myPlayer.reset();
+						console.log("重播");
+					});
+					$('#btn-des').on('click', function () {
+						myPlayer.setMute(true);
+						console.log("静音");
+					});
+
+	});
+
+
+</script>
+</body>
+</html>

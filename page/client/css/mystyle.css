@@ -1,0 +1,652 @@
+*@charset "utf-8";
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {
+    list-style:none;margin:0;padding:0;-webkit-text-size-adjust: none}
+h1, h2, h3, h4, h5, h6,span,a,em,ul,li{
+    list-style:none;
+    font-style: normal;
+    text-decoration: none;
+    padding: 0;margin: 0;
+    font-family: "微软雅黑","Consolas";
+}
+a:link{
+    text-decoration: none;
+}
+
+#main,.hed{
+    width: 100%;height: auto;margin: 0;padding: 0;
+    background-color: #f6f6f6;
+}
+.myvideo{
+    width:100%;
+    position:relative;
+    padding-bottom:56.25%;    /*需要用padding来维持16:9比例,也就是9除以16*/
+
+}
+.bot_tex .media-list {
+    padding-left: 0;
+    list-style: none;
+    overflow-y: hidden;
+}
+.myvideo video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.my-video-dimensions {
+    width: 100%;
+    height: 100%;
+}
+.video-js {
+    display: block;
+    vertical-align: top;
+    box-sizing: border-box;
+    position: static;
+    padding: 0;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    font-family: Arial,Helvetica,sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hed .title{
+    padding: 10px 5px;
+    height:69px;
+    /*border: 1px solid red;*/
+    background-color: #FFFFFF;
+}
+.hed .title .lef_face{
+    /*width: 27%;*/
+}
+.hed  .title .lef_face .face{
+    width: 48px;height: 48px;border-radius: 50%;
+    float: left;margin-left: 5px;
+}
+.hed  .title .lef_face img{
+    width: 100%;height: 100%;
+    border-radius: 50%;
+}
+.hed .title .rig_txt{
+    float: left;
+    margin-left: 5px;
+    /*width: 83%;*/
+}
+
+.hed  .title h5{
+    color: #000000;
+    padding: 0;
+    line-height: 48px;
+    text-align: left;
+    font-size: 14px;
+}
+.hed  .title  p{
+    overflow: hidden;
+    text-align: left;
+    font-size: 10px;
+    color: #999999;
+}
+.hed  .title  p a{
+    display: block;
+    color: #999999;
+}
+.hed .top_head #nav_li{
+    margin-left: 2px;
+
+}
+.p-col{
+    color: #3c3c3c;
+}
+h5 a{
+    color: #3c3c3c;font-size: 17px;
+}
+.timess{
+    text-align: left; font-size: 10px;margin: 1px;    color: #9a9a9a;
+}
+.bot_tex .media-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #6193cc;
+    font-size: 14px;
+    font-weight: 500;
+}
+.hed #nav_li li{
+    float: left;
+    padding: 15px 5px;width: 49%;
+}
+.hed #nav_li li a{
+    color: #CBCBCB;
+}
+
+.hed #nav_li{
+    margin-left: 2px;
+    text-align: center;
+    height: 52px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #CBCBCB;
+    margin-top: 18px;
+    font-size: 14px;
+}
+.pop_money .btn-mon{
+    padding: 2% 10%;
+    /*margin: 40px 5px 0px 4px;*/
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#SZ_jian{
+    font-size: 14px;
+    color: #333333; text-align: left;margin-left:10px;
+}
+.bot_tex .media .pull-left img{
+    width: 35px;height: 35px;border-radius: 50%;
+}
+.public_two{
+    /*background: #007AFF;*/
+    border-bottom: 2px solid #10B3DF;
+    /*color: #FFFFFF !important;*/
+}
+.public_two a{
+    color: #10b3df !important;
+}
+.bot_tex{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: #FFFFFF;
+}
+.bot_tex .media {
+    /*border-bottom: 1px solid #e5e5e5;*/
+}
+p{text-align: left;font-size: 14px;}
+.my-video-dimensions img{
+    z-index: 100;
+}
+.vjs-error .vjs-error-display:before {
+    color: #fff;
+    content: '';
+    font-size: 4em;
+    left: 0;
+    line-height: 1;
+    margin-top: -.5em;
+    position: absolute;
+    text-shadow: .05em .05em .1em #000;
+    text-align: center;
+    top: 50%;
+    vertical-align: middle;
+    width: 100%;
+    z-index: -2;
+}
+.vjs-modal-dialog .vjs-modal-dialog-content {
+    color: #000000;
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 20px 24px;
+    z-index: -2;
+
+}
+/*============================================================评论============================*/
+.pop_div{
+    width: 100%;
+    /*height: 40%;*/
+    padding: 10px;
+    border: 1px solid #CBCBCB;
+    display: none;
+    /*background: rgba(128, 128, 128, 0.68);*/
+    background-color: #f5f5f5;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    z-index: 100;
+}
+textarea {
+    width: 100%;
+    height: 60%;
+    padding: 10px 3%;
+    outline: none;
+    border: 0px solid #fff;
+    resize: none;
+    font: 13px "微软雅黑", Arial, Helvetica, sans-serif;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 10px;
+}
+
+/*===============================================打赏页面===============================*/
+.pop_money{
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    border: 1px solid #CBCBCB;
+    display: none;
+    /*background: rgba(128, 128, 128, 0.68);*/
+    background-color: #f5f5f5;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    z-index: 100;
+
+}
+.pop_money {
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    border: 1px solid #CBCBCB;
+    display: none;
+    /*background: rgba(128, 128, 128, 0.68);*/
+    background-color: #f5f5f5;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    z-index: 100;
+}
+.pop_money  .mui-btn{
+    margin: 21px 12px;
+}
+.pop_money  h5{
+    width: 100px;
+    margin: 10px ;
+}
+.pop_money  .sp_img img{
+    width: 21px;
+    height: 22px;
+    float: right;
+    margin: 10px 10px;/*关闭图标*/
+}
+.pop_money  .input-group {
+    position: absolute;
+    display: table;
+    border-collapse: separate;
+    width: 88%;
+    float: left;
+    margin: 10px;
+    bottom: 70px;
+}
+.pop_money .reward-pay-bt {
+    height: 54px;
+    background: #f2f2f5;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 15px;
+}
+.pop_money  .reward-pay-bt span {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    color: #979797;
+    font-size: 12px;
+    margin: 23px 5px;
+}
+.public_btn{
+    background-color: #24b4dd !important;
+    color: #fff;
+    outline: none;
+}
+#main .form-control {
+    /*display: block;*/
+    width: 35%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+/*========================打赏金额============*/
+#money{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 100;
+}
+#moneyMengb{
+    background-color: black;
+    padding-top: 145%;
+    width: 100%;
+    opacity: 0.3;
+}
+#moneyContent{
+    background-color: #F5F5F5;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    /*font-size: 50px;*/
+    padding-top: 3%;
+}
+#payMoney div:first-child{
+    background-color: #10B3DF;
+    color: white;
+    border: 0;
+}
+#moneyContent div:first-child span{
+    color:#24B4DD;
+    /*font-size: 30px;*/
+    margin-left: 4%;
+    margin-right: 4%;
+}
+#moneyContent div:first-child span:last-child{
+    float: right;
+}
+#payMoney div{
+    width:20%;
+    margin-left: 8%;
+    display: inline-block;
+    border: 1px solid #CBCBCB;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 16px;
+    margin-top: 2%;
+
+}
+
+#moneySelf{
+    width:50%;
+    margin-left: 18%;
+    border: 0;
+    background-color: #F5F5F5;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 16px;
+    margin-top: 2%;
+}
+#moneySelf input{
+    width: 39%;
+    border: 1px solid #CBCBCB;
+    border-radius: 18px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    outline: none;
+}
+#kouhao{
+    position: relative;
+    line-height: 48px;
+    color: #24B4DD;
+    text-align: center;
+    margin-top: 4%;
+}
+#kouhao span{
+
+
+}
+#line{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    border: 1px solid #e3e3e3;
+}
+/*==========================================底部css============================*/
+footer{
+    padding:  5px; background:rgba(255, 255, 255, 0.9);width: 100%;border: 1px solid #CBCBCB;position: fixed;bottom: 0px;
+    z-index: 90;
+}
+
+footer .nav_fot li{
+    float: left;padding: 5px 50px;
+}
+
+/*========================================================更多视频======================*/
+#voiMore{
+    width: 100%;height: auto;
+    padding: 0;margin-top: 60px;
+
+}
+#voiMore h4{
+    font-size: 14px !important;
+}
+.ro_cent{
+    padding: 0;margin: 0;
+}
+
+.ro_cent .thumbnail{
+    border: 0;margin: 0px;padding: 0;
+}
+.ro_cent .info_cat {
+    background: #09c6bc;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    color: #ffffff;
+    padding: 1px 10px;
+    margin: 8px 0 0 8px;
+    font-size: 12px;
+    display: block;
+    border-radius: 0px 0px 5px 0px;
+}
+.ro_cent .col_list{
+    width: 48%;
+    margin: 1%;float: left;
+    position: relative;
+}
+.ro_cent .col_list a{
+    display: block;
+}
+/*====================================直播+++++++++++++++++++++++++++++++*/
+#zhiBo{
+    width: 100%;height: 100%;
+    padding: 0;margin: 0;
+
+}
+.ui-loader-default{ display:none}
+.ui-mobile-viewport{ border:none;}
+.ui-page {padding: 0; margin: 0; outline: 0}
+#zhiBo .ul_list{
+    width: 100%;background-color: #fff;
+}
+#zhiBo .nav_tit{
+    margin-left: 10px;
+    text-align: center;
+    height: 52px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+    /* border-bottom: 1px solid #CBCBCB; */
+    font-size: 14px;
+}
+#zhiBo .nav_tit li{
+    float: left;
+    padding: 15px 10px;
+
+}
+#zhiBo .nav_tit li a{
+    color: #c3c3c3;
+    display: block;
+}
+#zhiBo .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #007aff;
+    border-bottom: 2px solid #007aff;
+    height: 39px;
+}
+#zhiBo .mui-control-item {
+    color: inherit;
+    border: 0;
+    color: #cbcbcb;
+}
+#zhiBo h4{
+    font-size: 14px;
+}
+
+header{
+    width: 100%;
+    padding: 10px 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #10b3df;
+    z-index: 100;
+}
+header #sp{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-left: 30%;
+    font-size: 18px;
+    vertical-align: middle;
+    line-height: 34px;
+}
+header .he_tim{
+    padding: 7px 11px;
+    background-color: #0092c2;
+    float: left;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+/*------------------------轮播图css-----------------*/
+#swip{
+    position: relative;
+}
+.swiper-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 14px;
+    background: #fff;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 100%;
+}
+
+/*==============*/
+#zhiBo .carousel {
+    position: relative;
+    z-index: 99;
+    margin-top: 55px;
+}
+#zhiBo .carousel-indicators{
+    text-align: right;
+}
+
+#zhiBo .carousel-caption{
+    text-align: left;
+    padding-bottom: 0;margin-left: -40px;
+}
+/*===================================设置=========================*/
+#Set{
+    width: 100%;height: auto;margin-top: 55px;padding: 0;
+}
+#Set .list-group-item{
+    padding: 4% 15px;
+    border-bottom: 1px solid #CBCBCB;
+    border-right: 0px;border-left: 0px;
+}
+#Set .list-group-item a{
+    color: #3c3c3c;
+    display: block;
+}
+#Set .list-span{
+    float: right;
+}
+#Set .list-span img{
+    width: 24px;
+    height: 21px;
+}
+/*==========================================意见反馈==============================*/
+#yiJian{
+    width: 100%;height: auto;padding: 0;
+    margin-top: 68px;
+}#yiJian textarea{
+     width: 96%;
+     padding: 5px 10px;
+     margin: 2%;
+     height: 160px;
+ }
+#yiJian .sub-btn{
+    width: 96%;margin: 2%;padding: 15px;
+    text-align: center;
+    background-color: #10b3df;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#yiJian .sub-btn a{
+    display: block;
+    color: #fff;
+}
+
+/*==============================================消息++++++++++++++++++++++++++++*/
+#Inform{
+    width: 100%;height: auto;padding:0;margin: 0;
+    margin-top: 70px;
+}
+#Inform .cent_infor{
+    width: 96%;
+    margin: 6% 2%;
+    border-radius: 10px;
+    border: 1px solid #CBCBCB;
+}
+
+#Inform .cent_infor .empt{
+    background-color: #85cbc9;
+    padding: 37px;
+    border-radius: 9px 0px 0px 9px;
+    float: left;
+}
+#Inform  .cent_infor .in_cents{
+    padding: 10px;
+}
+#Inform  .cent_infor .in_cents  h4 {
+
+}
+#Inform  .cent_infor .in_cents  h4 a{
+    color: #3c3c3c;	padding: 2px 20px;
+}
+#Inform  .cent_infor .in_cents p{
+    text-decoration: none;margin-top: 5px;
+}
+#Inform  .cent_infor .in_cents p a{
+    color: #cbcbcb;
+    margin-left: 10px;
+
+}
+/*==================================关于我们======================*/
+#about{
+    width: 100%;padding: 0;    margin-top: 55px;
+
+}
+#about .div_img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#about .div_img img{
+    width: 100%;
+    padding: 0;margin: 0;
+}
+#about p{
+    margin: 15px;
+    line-height: 180%;
+}

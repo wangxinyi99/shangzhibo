@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+html{
+    width: 100%;
+    background-color:#f5f5f5;
+}
+@font-face {
+    font-family: information;
+    src: url("../font/information/iconfont.ttf");
+}
+/*=================头部===================*/
+header{
+    width: 100%;
+    background-color: #10B3DF;
+    color: white;
+    /*font-size: 2rem;*/
+    padding-top: 4%;
+    padding-bottom: 4%;
+    vertical-align: middle;
+    margin: 0 !important;
+    position: fixed;
+}
+#headerTitle{
+    position: absolute;
+    top: 28%;
+    /*margin-top: -200%;*/
+    /*border: 1px solid red;*/
+}
+header div{
+    display: inline-block;
+    font-size: 1rem;
+}
+.headerInformation{
+    font-size: 1.5rem;
+    width: 20%;
+    margin-left: 45%;
+}
+header div:first-child{
+    margin-left: 2%;
+    width: 20%;
+    background-color: #0993C0;
+    color: white;
+    text-align: center;
+    /*padding-top: 0.5%;*/
+    /*padding-bottom: 0.5%;*/
+    border-radius: 30px;
+}
+header div:last-child{
+    width: 5%;
+    position: absolute;
+    right: 5%;
+}
+header div:last-child img{
+    width: 100%;
+}
+/*============导航===============*/
+nav{
+    width: 100%;
+    padding-bottom: 8%;
+    background-color: white !important;
+    font-size: 1.5rem !important;
+    position: fixed !important;
+    top: 9% !important;
+    /*clear: both;*/
+}
+nav ul{
+    list-style: none;
+    margin-left: 2%;
+    padding-top: 2%;
+}
+nav ul li{
+    float: left;
+    font-size: 1.5rem;
+    color: #787878;
+    opacity: 0.5;
+    margin-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1.5%;
+}
+.banner{
+    width: 100%;
+    /*margin-top: 10%;*/
+    padding-top: 20%;
+}
+.banner img{
+    width: 100%;
+}
+/*================指数部分================*/
+.contant{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.contant ul{
+    list-style: none;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 7.2%;
+}
+.contant ul li{
+    float: left;
+    font-size: 1.5rem;
+    color:#9C9C9C;
+    text-align: center;
+    padding: 2% ;
+    background-color: white;
+    border-bottom: 1px solid #F0F0F0;
+    border-left: 1px solid #F0F0F0;
+}
+.contant ul li:first-child{
+    color:white;
+    background-color: #24B4DD;
+}
+#zhishu{
+    width: 96%;
+    margin-left: 2%;
+}
+#zhishu section{
+    width: 100%;
+    background: white;
+}
+#zhishu section img{
+    width: 100%;
+}
+/*=====================新闻部分==========*/
+#news{
+    width: 100%;
+}
+#news ul{
+    width: 100%;
+    list-style: none;
+    clear: both;
+}
+#news ul li{
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 0.5% 0;
+    border: 0;
+    position: relative;
+    margin: 0.5% 0;
+}
+.newsImg{
+    width: 33%;
+    display: inline-block;
+    margin-left: -1.2%;
+}
+.newsImg img{
+    width: 100%;
+}
+.news{
+    width: 60%;
+    display: inline-block;
+}
+.news h2{
+    width: 100%;
+    display:inline-block;
+    font-size: 1.5rem;
+    color: #3c3c3c;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-left: 1%;
+}
+.newsCategory{
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    display:inline-block;
+    font-size: 1rem ;
+    line-height: 1rem;
+    color: #A2A1A1;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    padding: 1.5% 3%;
+}
+.newsTime{
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+    display:inline-block;
+    font-size: 1rem ;
+    line-height: 1rem;
+    color: #A2A1A1;
+}
+/*===================选择感兴趣的领域========*/
+#direction{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display:none;
+}
+#directionMb{
+    padding: 51%;
+    background-color: black;
+    opacity: 0.3;
+}
+#directionContant{
+    width: 100%;
+    background-color: white;
+}
+#directionContant div:first-child{
+    font-size: 1.5rem;
+    color: #393939;
+    padding:3% 0;
+}
+#directionChose{
+    width: 100%;
+}
+#directionChoseItem{
+    padding-bottom: 25%;
+}
+#directionTitle{
+    margin-left: 5%;
+}
+.choseItem{
+    width: 18%;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    float: left;
+    background-color:#f5f5f5 ;
+    margin-left: 5%;
+    margin-top: 1%;
+    border-radius: 16px;
+}
+#directionConfirm{
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: #10B3DF;
+    color: white;
+    text-align: center;
+    padding: 3% 0;
+}
+/*==================页脚部分==========*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+    border-top: 1px solid #8D8C8C;
+}
+footer div{
+    font-family: information;
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 31%;
+    text-align: center;
+}
+footer div:first-child{
+    color: #24B4dd;
+}
+footer div span{
+    font-size: 1.4rem;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #007aff;
+    border-bottom: 2px solid #007aff;
+    background: none;
+    height: 38px;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+    color: #C3C3C3;
+    border: 0;
+}

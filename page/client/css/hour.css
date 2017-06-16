@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+/*=================头部=============*/
+header{
+    width: 100%;
+    background-color: #10B3DF;
+    color: white;
+    font-size: 2rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    vertical-align: middle;
+    margin: 0 !important;
+    padding-right: 2%;
+}
+
+.col-sm-1 ,.col-xs-1{
+    /*width: 20%;*/
+    padding: 0 !important;
+}
+/*==================内容部分==========*/
+.contant{
+    margin-top: 4%;
+    margin-bottom: 10%;
+    height: 120%;
+}
+.bulletinDate{
+    top: 3%;
+    clear: both;
+    font-size: 1.7rem;
+    color: #24B4DD;
+    width: 35%;
+    background-color: #F5F5F5;
+    border-radius: 50px;
+    text-align: center;
+    padding: 2%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+    z-index: 3;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    position: relative;
+}
+.hourTop{
+    position: relative;
+    margin-left: 2%;
+}
+.hourTop div:first-child{
+    position: absolute;
+    top: 0;
+    left: 1%;
+    display: inline-block;
+    width: 3%;
+}
+.hourTop span:last-child{
+    margin-left: 8%;
+    font-size: 1.5rem;
+    color: #24B4DD;
+}
+.hourTop div img{
+    width: 100%;
+}
+.hourContant{
+    position: relative;
+    margin-left: 2%;
+}
+.hourContant div:first-child{
+    margin-left: 8%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-right: 2%;
+}
+.hourContant div div:first-child{
+    margin-left: 0;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #3D3D3D;
+}
+article{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color:#8c8c8c;
+}
+.hourBar{
+    position: absolute;
+    top: 5%;
+    left: 3.9%;
+    width: 1%;
+    height: 120%;
+    background-color:#A6E5F8 ;
+    z-index: -1;
+    border-radius:25px ;
+}

@@ -1,0 +1,99 @@
+package net.shangzhibo.cms.web.controller.mobile;
+
+import com.github.pagehelper.PageInfo;
+import net.sf.json.JSONObject;
+import net.shangzhibo.cms.web.model.CmsNewsCategory;
+import net.shangzhibo.cms.web.model.Scrollpic;
+import net.shangzhibo.cms.web.model.SzbBriefing;
+import net.shangzhibo.cms.web.model.shangke.ApiBase;
+import net.shangzhibo.cms.web.service.BriefingService;
+import net.shangzhibo.cms.web.service.CmsNewsCategoryService;
+import net.shangzhibo.cms.web.service.ScrollpicService;
+import net.shangzhibo.cms.web.vo.query.ScrollpicQuery;
+import net.shangzhibo.cms.web.vo.query.SzbBriefingQuery;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+/**
+ * Created by xiaoming(a)wallaw.cn on 16/8/25.
+ * 24小时快报数据接口
+ */
+@Controller
+@RequestMapping(value = "/m/briefing")
+public class BriefingController {
+
+    @Resource
+    private BriefingService briefingService;
+    @Resource
+    private CmsNewsCategoryService cmsNewsCategoryService;
+    @Resource
+    private ScrollpicService scrollpicService;
+
+
+    /**
+     * 首页返回json列表数据
+     * @param query
+     * @return
+     */
+    @RequestMapping(value = "list")
+    @ResponseBody
+    public ApiBase<SzbBriefing> list(HttpServletRequest request, SzbBriefingQuery query) {
+        String jsonData = request.getParameter("json");
+
+        JSONObject jsonObject = JSONObject.fromObject(jsonData);
+
+        String page = jsonObject.getString("page");
+        query.setPage(Integer.valueOf(page));
+
+        ApiBase<SzbBriefing> pageInfo = briefingService.list(query);
+
+        return pageInfo;
+    }
+
+    /**
+     * 24小时页面返回数据
+     * @param request
+     * @param query
+     * @return
+     */
+    @RequestMapping(value = "more")
+    @ResponseBody
+    public ModelAndView moreNews(HttpServletRequest request,SzbBriefingQuery query){
+        ModelAndView modelAndView = new ModelAndView();
+
+        //首页牛人说视频地址带图片
+        ScrollpicQuery indexScrollpicQuery = new ScrollpicQuery();
+        indexScrollpicQuery.setType("20");
+        indexScrollpicQuery.setRows(3);
+        List<Scrollpic> videos = scrollpicService.findPage(indexScrollpicQuery).getList();
+
+       //文章栏目分类列表
+        List<CmsNewsCategory> cmsNewsCategories = cmsNewsCategoryService.getAll();
+
+        //24小时快报列表
+        query.setStatus(1);
+        PageInfo<SzbBriefing> pageInfo = briefingService.getPage(query);
+
+        Set timeSet = new LinkedHashSet();//获得日期分类基准
+        for (SzbBriefing szbBriefing : pageInfo.getList()){
+            timeSet.add(szbBriefing.getDateSet());
+        }
+
+        modelAndView.addObject("timeSet",timeSet);
+        modelAndView.addObject("videos",videos);
+        modelAndView.addObject("cmsNewsCategories",cmsNewsCategories);
+        modelAndView.addObject("szbBriefings",pageInfo.getList());
+
+        modelAndView.setViewName("/shanglive/hour");
+
+        return modelAndView;
+    }
+}

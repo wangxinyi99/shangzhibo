@@ -1,0 +1,324 @@
+@font-face {
+    font-family: comment;
+    src: url("../font/comment/iconfont.ttf");
+}
+/*=================左侧固定的部分===========*/
+#ce_list {
+    -webkit-user-select: none;
+
+    font-size: 1.5em;
+    border: 2px solid #CBCBCB;
+    position: fixed;
+    top: 25%;
+    left: 3%;
+    padding: 0;
+    text-decoration: none;
+}
+
+#ce_list li {
+    cursor: pointer;
+    font-family: comment;
+    padding: 7px;
+    list-style: none;
+    /*margin: 3px;*/
+    border-bottom: 2px dashed #CBCBCB;
+}
+#ce_list li:last-child{
+    border: none;
+}
+#pop_list {
+    -webkit-user-select: none;
+
+    display: none;
+    border: 2px solid #CBCBCB;
+    border-radius: 5px;
+    position: fixed;
+    left: 7%;
+    top: 45%;
+    /*padding: 0;*/
+    text-decoration: none;
+    width: 20%;
+    padding: 0.2% 0;
+}
+
+#pop_list li {
+cursor: pointer;
+    float: left;
+    /*padding: 7px;*/
+    list-style: none;
+    /*margin: 0.1%;*/
+    border-right: 1px dashed #CBCBCB;
+    width: 20%;
+    padding: 1%;
+    /*margin: 2%;*/
+    /*margin-right: 2%;*/
+    /*border-right: 1px dashed red;*/
+}
+#pop_list li:last-child{
+    border: none;
+}
+#pop_list li div{
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    font-family: comment;
+    padding: 22% 0;
+    border-radius: 50%;
+    /*background-color: #000000;*/
+    /*margin-left: 5%;*/
+}
+#qq{
+    background-color: #52B0E8;
+}
+#qqhome{
+    background-color: #EDCD4B;
+
+}
+#weixin{
+    background-color: #43AF3D;
+
+}
+#friend{
+    background-color: #43AF3D;
+
+}
+#weibo{
+    background-color: #DD4F6A;
+
+}
+#goodRed{
+    display: none;
+    font-family: comment;
+    position: fixed;
+    top: 31.5%;
+    left: 6%;
+    color: red;
+    font-size: 1.7em;
+
+}
+/*===================二维码================*/
+#erweima{
+    display: none;
+    width: 20%;
+    border: 2px solid #CBCBCB;
+    list-style: none;
+    position: fixed;
+    top: 40%;
+    left: 8%;
+    padding: 0.2%;
+}
+#erweima li{
+    float: left;
+    width: 50%;
+}
+#erweima li div{
+    width: 96%;
+    margin: 2%;
+}
+#erweima li div img{
+    width: 100%;
+}
+/*===========================这是什么=============*/
+#articleOrigin{
+    margin: 3% 0;
+}
+#commentArea{
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    /*decoration: none;*/
+    resize: none;
+    outline: none;
+    background-color: #F5F5F5;
+    padding: 2%;
+}
+#comment{
+    margin-top: 7%;
+    /*padding-bottom: 60%;*/
+    /*border: 1px solid gainsboro;*/
+}
+#commentBorder{
+    border: 1px solid gainsboro;
+}
+#commentAmount{
+    padding: 2% 0;
+    font-size: 1.3em;
+    border-top: 2px solid gainsboro;
+}
+#commentBtnRow{
+    width: 90%;
+    margin-left: 5%;
+    padding: 2% 0;
+    border-bottom: 1px solid gainsboro;
+}
+#commentBtn{
+    font-size: 1em;
+    width: 10%;
+    padding: 1% 0;
+    background-color: #24B4DD;
+    color: white;
+    text-align: center;
+    border-radius: 1.5em;
+    margin-left: 90%;
+    cursor: pointer;
+}
+/*#comment ul{*/
+    /*border: 1px solid red;*/
+    /*clear: both;*/
+
+/*}*/
+#informationFooter{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    /*border: 1px solid red;*/
+}
+/*#Comment .input-group {*/
+    /*position: relative;*/
+    /*display: table;*/
+    /*width: 100%;*/
+    /*border-collapse: separate;*/
+    /*padding-left:2% ;*/
+    /*padding-right: 2%;*/
+    /*margin-bottom: 2%;*/
+/*}*/
+/*footer{*/
+    /*margin-bottom: 2%;*/
+/*}*/
+/*#Comment .input-group .form-control {*/
+    /*position: relative;*/
+    /*z-index: 2;*/
+    /*float: left;*/
+    /*width: 70%;*/
+    /*margin-bottom: 0;*/
+    /*border-radius: 10px;*/
+    /*background-color: #e6e6e6;*/
+/*}*/
+/*#Comment .input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child>.btn-group:not(:first-child)>.btn, .input-group-btn:first-child>.btn:not(:first-child), .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn, .input-group-btn:last-child>.dropdown-toggle {*/
+    /*border-top-left-radius: 0;*/
+    /*border-bottom-left-radius: 0;*/
+    /*border-radius: 10px;*/
+/*}*/
+/*#Comment .btn-info {*/
+    /*color: #fff;*/
+    /*background-color: #10b3df;*/
+    /*border-color: #10b3df;*/
+    /*width: 28%;*/
+    /*border-radius: 10px;*/
+    /*float: right;*/
+    /*outline: none;*/
+/*}*/
+/*.media-heading {*/
+    /*margin-top: 0;*/
+    /*margin-bottom: 5px;*/
+    /*font-size: 1.5rem;*/
+    /*color: #10b3df;*/
+/*}*/
+/*.timess{*/
+    /*font-size: 1rem;*/
+    /*color: #CBCBCB;*/
+/*}*/
+/*.pull-left img {*/
+    /*width: 35px;*/
+    /*height: 35px;*/
+    /*border-radius: 50%;*/
+/*}*/
+/*.p-col{*/
+    /*font-size: 1.5rem;*/
+/*}*/
+/*.media {*/
+    /*margin-top: 15px;*/
+    /*border-bottom: 1px solid #e5e5e5;*/
+/*}*/
+/*/!*footer{*!/*/
+    /*/!*position: fixed;*!/*/
+    /*/!*bottom: 0;*!/*/
+    /*/!*width: 100%;*!/*/
+/*/!*}*!/*/
+/*/!*input{*!/*/
+    /*/!*border: 0 !important;*!/*/
+    /*/!*box-shadow: none !important;*!/*/
+/*/!*}*!/*/
+#comment ul{
+    list-style: none;
+    /*margin-bottom: 11.5%;*/
+}
+#comment ul li{
+    margin-top: 2%;
+    /*margin-bottom: 2%;*/
+    /*padding-bottom: 5%;*/
+    /*border-bottom: 1px solid #CCCCCC;*/
+    font-size: 1em;
+}
+
+/*#comment{*/
+    /*width: 96%;*/
+    /*margin-left: 2%;*/
+    /*background-color: white;*/
+    /*margin-top: 5%;*/
+    /*padding-top: 5%;*/
+/*}*/
+#commentTotle{
+    text-align: center;
+    background-color: white;
+    padding-bottom: 4%;
+
+    border-bottom: 1px solid #CCCCCC;
+}
+#commentButtle{
+    display: inline-block;
+    width: 4%;
+    margin-right: 2%;
+}
+#commentButtle img{
+    width: 100%;
+}
+.user{
+    position: relative;
+    padding: 2%;
+}
+.userImg{
+    display: inline-block;
+    width: 3%;
+    overflow: hidden;
+    border-radius: 100%;
+    /*margin-top: 2%;*/
+
+}
+.userImg img{
+    width: 100%;
+    border-radius: 100%;
+}
+.userMassage{
+    display: inline-block;
+}
+.userName{
+    font-size: 1.2em;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    color: #3273BB;
+}
+.userDate{
+    font-size: 0.8em;
+    position: absolute;
+    top: 68%;
+    left: 8%;
+    color: #B6B6B6;
+}
+/*.userTime{*/
+    /*font-size: 0.8em;*/
+    /*position: absolute;*/
+    /*top: 35%;*/
+    /*right: 3%;*/
+/*}*/
+.userComment{
+    width: 88%;
+    margin-left: 8%;
+    margin-top: 1%;
+    font-size: 1em;
+    padding-bottom: 5%;
+    border-bottom: 1px solid gainsboro;
+}
+#comment ul li:last-child .userComment{
+    border: none;
+}

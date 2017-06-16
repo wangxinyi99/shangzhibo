@@ -1,0 +1,68 @@
+
+
+#Comment .input-group {
+    position: relative;
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    padding-left:2% ;
+    padding-right: 2%;
+    margin-bottom: 2%;
+}
+footer{
+    margin-bottom: 2%;
+}
+#Comment .input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 70%;
+    margin-bottom: 0;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+}
+#Comment .input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child>.btn-group:not(:first-child)>.btn, .input-group-btn:first-child>.btn:not(:first-child), .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn, .input-group-btn:last-child>.dropdown-toggle {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-radius: 10px;
+}
+#Comment .btn-info {
+    color: #fff;
+    background-color: #10b3df;
+    border-color: #10b3df;
+    width: 28%;
+    border-radius: 10px;
+    float: right;
+    outline: none;
+}
+.media-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+       font-size: 1.5rem;
+    color: #10b3df;
+}
+.timess{
+	font-size: 1rem;
+	color: #CBCBCB;
+}
+.pull-left img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.p-col{
+    font-size: 1.5rem;
+}
+.media {
+    margin-top: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+input{
+    border: 0 !important;
+    box-shadow: none !important;
+}

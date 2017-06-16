@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content=" initial-scale=1,maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/mystyle.css"/>
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>尚直播</title>
+		<style type="text/css">
+			html,body{
+				font-family: "微软雅黑","Consolas";
+				font-size: 14px;
+				background-color: #f5f5f5;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+		<a href="javascript:history.go(-1)"><img src="../img/title_btn_back_normal@2x.png" style="width: 30px;height: 30px;margin-top: 5px;"></a>
+		<span id="sp">
+			设置
+		</span>
+	</header>
+		<div id="Set">
+			<ul class="list-group">
+			   <li class="list-group-item">
+			   	<a href="yijian.html">意见反馈
+			   	<span class="list-span"><img src="../img/content_btn_next_normal.png"/></span>
+			   </a>
+			   </li>
+			 
+			 <li class="list-group-item">
+			    
+			      允许3G/4G观看视频
+			      <span class="list-span" onclick="change_pic();">
+			      	<a href="javascript:;"><img src="../img/content_btn_switch_off@2x.png"id="chang_img" style="width: 47px;
+   					 height: 33px;"></a>
+			      </span>
+			      <!--<div class="mui-switch mui-switch-blue">
+				  <div class="mui-switch-handle"></div>
+				</div>-->
+			   </li>
+			   <li class="list-group-item">
+			   	<a href="about.html">
+				   	<span class="list-span"><img src="../img/content_btn_next_normal.png"style=""></span>
+				      关于我们
+			      </a>
+			   </li>
+		</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function change_pic(){
+			var imgObj = document.getElementById("chang_img");
+			var Flag=(imgObj.getAttribute("src",2)=="../img/content_btn_switch_off@2x.png")
+			imgObj.src=Flag?"../img/content_btn_switch_on@2x.png":"../img/content_btn_switch_off@2x.png";
+			console.log(imgObj.src+"sjdkfjdkd");
+			}
+
+		$("ul li:first-child").click(function () {
+			window.location.href="yijian.html"
+		})
+		$("ul li:last-child").click(function () {
+//			window.location.href="about.html"
+		})
+	</script>
+
+</html>

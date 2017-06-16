@@ -1,0 +1,54 @@
+
+/*================左边内容部分============*/
+#contantLeft{
+    border: 1px solid gainsboro;
+    padding: 0;
+    margin-top: 3.5%;
+}
+#leftTitle{
+    font-weight: bolder;
+    padding: 2% 3%;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+/*.hourSectioncontant .houTop{*/
+    /*color: red;*/
+/*}*/
+
+.bulletinDate{
+    top: 3%;
+    /*clear: both;*/
+    font-size: 1.1rem;
+    color: #24B4DD;
+    width:15%;
+    border: 2px solid #24B4DD;
+    /*background-color: #F5F5F5;*/
+    border-radius: 50px;
+    text-align: center;
+    padding: 1% 2%;
+    margin-left: 2%;
+    margin-top: 8%;
+    margin-bottom: 3%;
+    z-index: 3;
+    font-size: 1em;
+}
+#contant0 .bulletinDate{
+    margin-top: 3%;
+}
+.hourSectioncontant .hourTop span{
+    /*color: red;*/
+    font-size: 1em;
+}
+.hourSectioncontant .hourContant div div{
+    font-size: 1em;
+}
+.hourSectioncontant .hourContant div article{
+    font-size: 0.9em;
+
+}
+.hourSectioncontant ul li .hourBar{
+    top: 0%;
+}
+#informationFooter{
+    margin-top: 10%;
+}
